@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<cucumber.version>6.1.1</cucumber.version>
 	</properties>
 
 	<dependencies>
@@ -49,6 +50,18 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
 		</dependency>
 	</dependencies>
 
