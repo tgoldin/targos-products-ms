@@ -8,5 +8,5 @@ import lombok.Value;
 @AllArgsConstructor
 @Builder
 public final class ProductCreatedResponse {
-    private String productReferenceId;
+    private String productReference;
 }

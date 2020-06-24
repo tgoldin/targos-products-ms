@@ -52,7 +52,7 @@ public class AddProductStepsDefinition {
                 .name(row.get(0))
                 .description(row.get(1))
                 .productType(toProductType(row.get(2)))
-                .stockId(row.get(3))
+                .stockReference(row.get(3))
                 .manufacturerReference(toManufacturerReference(row.get(4), row.get(5)))
                 .currency(row.get(6))
                 .unitPrice(new BigDecimal(row.get(7)))
@@ -92,6 +92,6 @@ public class AddProductStepsDefinition {
     public void product_available_on_web_channel() {
         assertThat(response.getStatusCode()).isEqualTo(CREATED);
 
-        assertThat(response.getBody().getProductReferenceId()).isNotNull();
+        assertThat(response.getBody().getProductReference()).isNotNull();
     }
 }

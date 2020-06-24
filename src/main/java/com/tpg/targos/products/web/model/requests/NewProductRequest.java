@@ -13,7 +13,7 @@ public final class NewProductRequest {
     private String name;
     private String description;
     private ProductType productType;
-    private String stockId;
+    private String stockReference;
     private ManufacturerReference manufacturerReference;
     private String currency;
     private BigDecimal unitPrice;
